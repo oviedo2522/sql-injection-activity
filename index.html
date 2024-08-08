@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Add some basic styling */
+        .container {
+            margin: 20px;
+        }
+
+        .unauthorized {
+            color: red;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        <div class="container">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+
+    <script>
+
+        if (document.location.hash === '#unauthorized') {
+            document.write('<div class="unauthorized">Invalid Username or Password</div>');
+        } else if (document.location.hash === '#error') {
+            document.write('<div class="error">An error has occurred</div>');
+        }
+
+
+        document.querySelector('form').addEventListener('submit', function (event) {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (!username || !password) {
+                alert('Username and Password are required');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+form {
+    border: 5px solid #f8e092;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+input[type=text],
+input[type=password] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #d0d0d0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #dbfadc;
+    color: #3b3b3b;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+button:hover {
+    background-color: #c1e4d8;
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+    border: 2px solid #f8e092;
+}
+
+.container {
+    padding: 30px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.unauthorized {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    background-color: #f8cdd2;
+    color: #d9534f;
+    padding: 10px;
+    border-radius: 5px;
+}
